@@ -5,6 +5,6 @@ namespace Es.FwI
 {
     public interface IDecompressionInfo
     {
-        int UncompressedMaxSize { get; }
+        int UncompressedSize { get; }
     }
 }

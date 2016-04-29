@@ -18,7 +18,8 @@ namespace Es.FwI
         ICompressInfo Analyze(ArraySegment<byte> uncompressedInput);
 
         /// <summary>
-        ///     Transforms the uncompressedInput into the compressedOutput. Use MaxOutputCount to determine how large the compressedOutput needs to be be in the
+        ///     Transforms the uncompressedInput into the compressedOutput. Use MaxOutputCount to determine how large the
+        ///     compressedOutput needs to be be in the
         ///     worst case and ensure you've allocated it.
         /// </summary>
         /// <param name="uncompressedInput">uncompressedInput byte array segement</param>

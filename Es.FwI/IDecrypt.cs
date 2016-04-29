@@ -5,8 +5,9 @@ namespace Es.FwI
     public interface IDecrypt
     {
         IDecryptInfo Analyze(ArraySegment<byte> encryptedInput);
+
         /// <summary>
-        /// Decrypts input into output
+        ///     Decrypts input into output
         /// </summary>
         /// <param name="encryptedInput"></param>
         /// <param name="decryptedOutput"></param>

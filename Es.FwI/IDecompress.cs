@@ -17,13 +17,15 @@ namespace Es.FwI
         IDecompressionInfo Analyze(ArraySegment<byte> compressedInput);
 
         /// <summary>
-        ///     Transforms the compressedInput into the decompressedOutput. Use MaxOutputCount to determine how large the decompressedOutput needs to be be in the
+        ///     Transforms the compressedInput into the decompressedOutput. Use MaxOutputCount to determine how large the
+        ///     decompressedOutput needs to be be in the
         ///     worst case and ensure you've allocated it.
         /// </summary>
         /// <param name="compressedInput">compressedInput byte array segement (compressedInput data)</param>
         /// <param name="decompressedOutput">decompressedOutput byte array segement (where to write the uncompressed data)</param>
         /// <param name="info">decompression info from Analyze</param>
         /// <returns></returns>
-        void Decompress(ArraySegment<byte> compressedInput, ArraySegment<byte> decompressedOutput, IDecompressionInfo info);
+        void Decompress(ArraySegment<byte> compressedInput, ArraySegment<byte> decompressedOutput,
+            IDecompressionInfo info);
     }
 }
